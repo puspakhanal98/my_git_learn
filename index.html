@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Puspa Khanal - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #f4f6fb;
+        margin: 0;
+        padding: 0;
+        color: #222;
+      }
+      header {
+        background: #3a6ea5;
+        color: #fff;
+        padding: 2rem 0;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+      }
+      header p {
+        margin: 0.5rem 0 0 0;
+        font-size: 1.2rem;
+      }
+      main {
+        max-width: 700px;
+        margin: 2rem auto;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        padding: 2rem;
+      }
+      section {
+        margin-bottom: 2rem;
+      }
+      h2 {
+        color: #3a6ea5;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+      }
+      ul.skills {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 1.5rem;
+      }
+      ul.skills li {
+        background: #e3ecfa;
+        color: #3a6ea5;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-weight: 500;
+        font-size: 1rem;
+      }
+      .contact-btn {
+        display: inline-block;
+        background: #3a6ea5;
+        color: #fff;
+        padding: 0.7rem 1.5rem;
+        border: none;
+        border-radius: 25px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.2s;
+        margin-top: 1rem;
+        text-decoration: none;
+      }
+      .contact-btn:hover {
+        background: #285080;
+      }
+      @media (max-width: 600px) {
+        main {
+          padding: 1rem;
+        }
+        ul.skills {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Puspa Khanal</h1>
+      <p>MSc Computer Science</p>
+    </header>
+    <main>
+      <section>
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm Puspa Khanal, a passionate computer science graduate with
+          expertise in web development and programming. I enjoy building
+          efficient and creative solutions using modern technologies.
+        </p>
+      </section>
+      <section>
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Node.js</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <p>
+          Feel free to reach out for collaboration or project opportunities!
+        </p>
+        <a href="mailto:puspakhanal@example.com" class="contact-btn"
+          >Email Me</a
+        >
+      </section>
+    </main>
+    <script>
+      // Simple JS: Alert on contact button click
+      document
+        .querySelector(".contact-btn")
+        .addEventListener("click", function (e) {
+          alert(
+            "Thank you for your interest! You can email me at puspakhanal@example.com"
+          );
+        });
+    </script>
+  </body>
+</html>
